@@ -1,0 +1,251 @@
+/* start global rules */
+* {
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #124294;
+}
+
+nav .logo {
+  width: 100px;
+}
+nav .logo img {
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  nav .logo img {
+    display: none;
+  }
+}
+/* add media quries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 300px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 575px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1175px;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* end media quries */
+/* end global rules */
+/* start sign up page  */
+.sign-up .content > img {
+  display: none;
+}
+@media (max-width: 768px) {
+  .sign-up .content img {
+    display: block;
+    margin: 30px auto;
+  }
+  .sign-up h1 {
+    display: none;
+  }
+}
+.sign-up h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 70px;
+  color: var(--main-color);
+  text-align: center;
+}
+.sign-up .form,
+.sign-up .form .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .sign-up .form,
+  .sign-up .form .name {
+    display: block;
+  }
+}
+.sign-up .form .name {
+  gap: 50px;
+}
+.sign-up .form .name .first-name,
+.sign-up .form .name .last-name,
+.sign-up .form .email,
+.sign-up .form .password {
+  position: relative;
+}
+.sign-up .form .name label,
+.sign-up .form .email label,
+.sign-up .form .password label {
+  display: flex;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-family: "Roboto";
+}
+.sign-up .form .name input,
+.sign-up .form .email input,
+.sign-up .form .password input {
+  padding: 5px 20px;
+  border: none;
+  border-bottom: 1px solid var(--main-color);
+  margin-bottom: 30px;
+  outline: none;
+}
+@media (max-width: 600px) {
+  .sign-up .form .name input {
+    width: 100%;
+  }
+}
+.sign-up .form .name svg,
+.sign-up .form .email svg,
+.sign-up .form .password svg {
+  position: absolute;
+  left: 0px;
+  top: 43px;
+  font-size: 12px;
+  color: #999999;
+}
+.sign-up .form .email input,
+.sign-up .form .password input {
+  width: 100%;
+}
+.sign-up .form .password:nth-child(4) input {
+  margin-bottom: 10px;
+}
+.sign-up .form .password .eye {
+  position: absolute;
+  left: 96%;
+  top: 50%;
+  cursor: pointer;
+}
+.sign-up .form .forget {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+.sign-up .form .buttons {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto";
+}
+.sign-up .form .buttons button:first-child {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.sign-up .form .buttons button:last-child {
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: white;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  margin-bottom: 50px;
+}
+.sign-up .content .lines {
+  display: block;
+  text-align: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+@media (max-width: 600px) {
+  .sign-up .content .lines {
+    margin-bottom: -5px;
+  }
+}
+.sign-up .content .lines span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 460px;
+  height: 1px;
+  background-color: var(--main-color);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+@media (max-width: 600px) {
+  .sign-up .content .lines span {
+    width: 270px;
+  }
+}
+.sign-up .content .lines span::after {
+  content: "or sign up with";
+  position: absolute;
+  padding: 10px;
+  transform: translate(-50%, -51%);
+  width: fit-content;
+  background-color: white;
+  -webkit-transform: translate(-50%, -51%);
+  -moz-transform: translate(-50%, -51%);
+  -ms-transform: translate(-50%, -51%);
+  -o-transform: translate(-50%, -51%);
+}
+.sign-up .content ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign-up .content ul li a {
+  text-decoration: none;
+}
+.sign-up .content ul li:first-child a img {
+  margin-left: -40px;
+}
+.sign-up .content ul li a img {
+  margin-left: 30px;
+  width: 45px;
+}
+/* end sign up page  */
