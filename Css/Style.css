@@ -1,6 +1,8 @@
 /* start global rules */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -522,6 +524,8 @@ nav .logo img {
   background-color: var(--main-color);
   color: white;
   border: none;
+  outline: none;
+  cursor: pointer;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -529,3 +533,109 @@ nav .logo img {
   -o-border-radius: 30px;
 }
 /* end end page */
+/* start confirmation page */
+.confirm .content img {
+  display: none;
+}
+@media (max-width: 768px) {
+  .confirm .content img {
+    display: block;
+    margin: 30px auto;
+  }
+}
+.confirm h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 50px;
+  color: var(--main-color);
+  text-align: center;
+}
+.confirm p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 40px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+.confirm .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.confirm .form .inputs {
+  line-height: 100px;
+}
+.confirm .form .inputs input {
+  width: 55px;
+  height: 55px;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  margin-left: 20px;
+  border: 0.5px solid var(--main-color);
+  box-shadow: 0 0 5px #999 inset;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+@media (max-width: 600px) {
+  .confirm .form .inputs input {
+    width: 40px;
+    height: 40px;
+    margin-left: 14px;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+  }
+}
+.confirm .form .inputs input:focus {
+  outline: none;
+}
+.confirm .form span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 80px;
+}
+@media (max-width: 600px) {
+  .confirm .form span {
+    font-size: 10px;
+    margin-top: -10px;
+    margin-bottom: 100px;
+  }
+}
+.confirm .form span a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+.confirm .form .btn {
+  width: 430px;
+  height: 40px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  cursor: pointer;
+  border: none;
+}
+@media (max-width: 600px) {
+  .confirm .form .btn {
+    width: 330px;
+    height: 40px;
+  }
+}
+/* end confirmation page */
